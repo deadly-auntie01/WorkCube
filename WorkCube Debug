@@ -1,0 +1,19 @@
+#include <PRIZM.h>
+PRIZM prizm;
+//int counter = 0;
+bool isMorning = true;
+String myName = "peoples ";
+void setup() {
+   prizm.PrizmBegin();
+   Serial.begin(9600);
+}
+
+
+void loop() {
+ if (isMorning==true){
+   Serial.print("Good Morning " + myName);
+   isMornng == false
+ } else {
+  Serial.print("Good Afternoon " + myName);
+ }
+ }
